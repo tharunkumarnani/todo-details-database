@@ -1,0 +1,28 @@
+GET http://localhost:3000/todos/?category=&priority=
+
+###
+GET http://localhost:3000/agenda/?date=2021-4-4
+###
+
+POST http://localhost:3000/create-todo
+Content-Type: application/json
+
+{
+    "id":10,
+    "todo":"Note 10",
+    "priority":"HIGH",
+    "status":"DONE",
+    "category":"HOME",
+    "dueDate":"2021-04-04"
+}
+###
+
+PUT http://localhost:3000/todos/9
+Content-Type: application/json
+
+{
+    "category":"WORK"
+}
+
+###
+DELETE http://localhost:3000/todos/10
